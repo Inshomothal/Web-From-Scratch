@@ -19,8 +19,22 @@ h1{
     width: 65%;
 }
 
-.orders__section{
+.orders-section{
     display: flex;
     justify-content: center;
 }
+    .orders-section>div{
+        margin: 10px;
+        border: solid black
+    }
+
+
+.order-book{
+    display: flex;
+    justify-content: space-evenly;
+}
+    .order-book>div{
+        justify-self: row;
+        border: solid black
+    }
 
