@@ -3,41 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Next Website</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
 </head>
 <body>
-     <nav class="navbar">
-        <div class="navbar__container">
-            <a href="/" id="navbar__logo">NEXT</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <div class="split__container">
+        <div class="left-split">
+            <h1>NewGen Token Exchange</h1>
+            <p>Selected Market</p>
+
+            <div>
+                <h2>Balance</h2>
+                <button>Deposit / Withdraw</button>
+                <p>Token</p>
+                <p>Wallet</p>
+                <p>Exchange</p>
+                <form action="">
+                    <label for="balance-amount">Amount</label>
+                    <input id="balance-amount"type="text">
+                    <button>Deposit ></button>
+                </form>
             </div>
-            <ul class="navar__menu">
-                <li class="navbar__item">
-                    <a href="/" class="navbar__links">
-                        Home
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/tech.html" class="navbar__links">
-                        Tech
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/" class="navbar__links">
-                        Products
-                    </a>
-                </li>
-                <li class="navbar__btn">
-                    <a href="/" class="button">
-                        Sign Up
-                    </a>
-                </li>
-            </ul>
+
+            <div>
+                <p>Token</p>
+                <p>Wallet</p>
+                <p>Exchange</p>
+                <form action="">
+                    <label for="balance-amount">Amount</label>
+                    <input id="balance-amount"type="text">
+                    <button>Deposit ></button>
+                </form>
+            </div>
+
+            <div>
+                <h2>New Order</h2>
+                <button>Buy / Sell</button>
+                <p>Token</p>
+                <p>Wallet</p>
+                <p>Exchange</p>
+                <form action="">
+                    <label for="balance-amount">Amount</label>
+                    <input id="balance-amount"type="text">
+                    <button>Deposit ></button>
+                </form>
+            </div>
         </div>
-     </nav>   
+        <div class="right-split">
+            <div>
+                <label for="market-choice">Market</label>
+            <select name="Network" id="market-choice">
+                <option value="">--Choose a Network--</option>
+                <option value="ETH">Ethereum Network</option>
+            </select>
+                <label for="metamask-connect">My Balance 0 Eth</label>
+                <button id="metamask-connect">Connect</button>
+            </div>
+
+            <label for="chart">undefined</label>
+            <canvas id="chart"></canvas>
+            <div>
+                <h2>My Orders</h2>
+                <button>Orders / Trades</button>
+                <p>Insert orders script here</p>
+            </div>
+            <div>
+                <h2>Trades</h2>
+                <p>Insert trade script here</p>
+            </div>
+            <div>
+                <h2>Order Book</h2>
+                <div>Sell Orders Script</div>
+                <div>Buy Orders Script</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
