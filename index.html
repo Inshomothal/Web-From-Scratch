@@ -11,51 +11,51 @@
     <title>NewGen Token Exchange</title>
 </head>
 <body>
-    <div class="exchangepage">
-        <div class="leftcontainer exchangepage-leftcontainer">
-            <h1 class="leftcontainer-h1">NewGen Token Exchange</h1>
+    <div class="exchangePage">
+        <div class="leftContainer exchangePage-leftContainer">
+            <h1 class="leftContainer-h1">NewGen Token Exchange</h1>
             <p>Selected Market</p>
 
-            <div class="token1 leftcontainer-token1">
-                <h2 class="leftcontainer-h2">Balance</h2>
-                <button class="button leftcontainer-tab">Deposit / Withdraw</button>
+            <div class="token1 leftContainer-token1 leftContainer-panels">
+                <h2 class="leftContainer-h2">Balance</h2>
+                <button class="button leftContainer-tab">Deposit / Withdraw</button>
                 <p>Token</p>
                 <p>Wallet</p>
                 <p>Exchange</p>
                 <form action="">
-                    <label for="balance-amount">Amount</label>
-                    <input id="balance-amount"type="text"/>
-                    <button>Deposit ></button>
+                    <label for="balanceAmount">Amount</label>
+                    <input id="balanceAmount" class="token1-balance leftContainer-balances" type="text"/>
+                    <button class="token1-button leftContainer-orderButtons">Deposit ></button>
                 </form>
             </div>
 
-            <div class="token2 leftcontainer-token2">
+            <div class="token2 leftContainer-token2 leftContainer-panels">
                 <p>Token</p>
                 <p>Wallet</p>
                 <p>Exchange</p>
                 <form action="">
-                    <label for="balance-amount">Amount</label>
-                    <input id="balance-amount"type="text"/>
-                    <button>Deposit ></button>
+                    <label for="balanceAmount">Amount</label>
+                    <input id="balanceAmount" type="text"/>
+                    <button class="token2Button leftContainer-orderButtons">Deposit ></button>
                 </form>
             </div>
 
-            <div>
+            <div class="tokenOrders leftContainer-tokenOrders leftContainer-panels">
                 <h2>New Order</h2>
                 <button>Buy / Sell</button>
                 <p>Token</p>
                 <p>Wallet</p>
                 <p>Exchange</p>
                 <form action="">
-                    <label for="balance-amount">Amount</label>
-                    <input id="balance-amount"type="text"/>
-                    <button>Deposit ></button>
+                    <label for="balanceAmount">Amount</label>
+                    <input id="balanceAmount" type="text"/>
+                    <button class="tokenOrders-button leftContainer-orderButtons">Buy Order ></button>
                 </form>
             </div>
         </div>
-        <div class="right-split">
-            <div>
-                <label for="market-choice">Market</label>
+        <div class="rightContainer">
+            <div class="headerInfo rightContainer-headerInfo">
+                <label for="market-choice" class="rightContainer-label headerInfo-label">Market</label>
             <select name="Network" id="market-choice">
                 <option value="">--Choose a Network--</option>
                 <option value="ETH">Ethereum Network</option>
@@ -65,22 +65,22 @@
             </div>
 
             <label for="chart">undefined</label>
-            <canvas id="chart"></canvas>
-            <div class="orders-section">
-                <div>
+            <canvas id="chart" class="priceChart rightContainer-orders"></canvas>
+            <div class="ordersSection">
+                <div class="userOrders rightContainer-orders">
                     <h2>My Orders</h2>
                     <button>Orders / Trades</button>
                     <p>Insert orders script here</p>
                 </div>
-                <div>
+                <div class="tradeHistory rightContainer-orders">
                     <h2>Trades</h2>
                     <p>Insert trade script here</p>
                 </div>
             </div>
-            <label for="order-book"><h2>Order Book</h2></label>
-            <div class="order-book">
-                <div>Sell Orders Script</div>
-                <div>Buy Orders Script</div>
+            <label for="orderBook"><h2>Order Book</h2></label>
+            <div class="orderBook">
+                <div class="sellOrderHistory rightContainer-orders">Sell Orders Script</div>
+                <div class="buyOrderHistory rightContainer-orders">Buy Orders Script</div>
             </div>
         </div>
     </div>

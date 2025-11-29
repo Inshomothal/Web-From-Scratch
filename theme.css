@@ -1,0 +1,23 @@
+h1{
+    color: rgb(235, 108, 108);
+}
+
+.leftContainer{
+    background-color: #121929;
+}
+    .leftContainer-orderButtons{
+        background-color: transparent;
+        border: #2f649e solid 1px;
+        border-radius: 7px;
+        color: #2f649e;
+
+    }
+
+.tokenOrders-button{
+    background-color: #2187d1;
+    color: white;
+}
+
+.rightContainer-orders{
+    background-color: #121929;
+}
